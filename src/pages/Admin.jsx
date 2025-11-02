@@ -5,7 +5,6 @@ import {
   Package, 
   Users, 
   IndianRupee, 
-  IndianRupee, 
   FileText, 
   Download, 
   CheckCircle, 
