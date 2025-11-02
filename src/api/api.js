@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://print-ease-backend-new-qlv6.vercel.app/api", // backend URL
+  baseURL: "https://print-ease-backend-2121.vercel.app/api", // backend URL
 });
 
 // Add token automatically if exists
