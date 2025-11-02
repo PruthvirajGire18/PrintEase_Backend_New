@@ -4,7 +4,8 @@ import {
   Shield, 
   Package, 
   Users, 
-  DollarSign, 
+  IndianRupee, 
+  IndianRupee, 
   FileText, 
   Download, 
   CheckCircle, 
@@ -209,7 +210,7 @@ function Admin() {
           <div className="bg-white rounded-xl p-3 md:p-4 shadow-lg border border-gray-100 card-hover">
             <div className="flex items-center gap-2 md:gap-3">
               <div className="bg-purple-100 p-1.5 md:p-2 rounded-lg">
-                <DollarSign className="text-purple-600" size={16} />
+                <IndianRupee className="text-purple-600" size={16} />
               </div>
               <div className="min-w-0">
                 <p className="text-[10px] md:text-xs text-gray-600 truncate">Revenue</p>
@@ -273,7 +274,7 @@ function Admin() {
                         </span>
                       </div>
                       <div className="flex items-center gap-2 text-sm">
-                        <DollarSign className="text-green-600" size={14} />
+                        <IndianRupee className="text-green-600" size={14} />
                         <span className="font-bold text-green-600">₹{o.totalAmount}</span>
                       </div>
                     </div>
@@ -410,7 +411,7 @@ function Admin() {
                       </td>
                       <td className="px-4 lg:px-6 py-4 whitespace-nowrap">
                         <div className="flex items-center gap-2">
-                          <DollarSign className="text-green-600" size={18} />
+                          <IndianRupee className="text-green-600" size={18} />
                           <span className="text-lg font-bold text-green-600">₹{o.totalAmount}</span>
                         </div>
                       </td>
