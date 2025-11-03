@@ -27,33 +27,30 @@ function Navbar() {
         {/* Desktop Links */}
         <div className="hidden md:flex items-center gap-2 font-semibold">
           {!isLoggedIn ? (
-            <Link 
-              to="/login" 
-              className="px-4 py-2 rounded-lg hover:bg-white hover:bg-opacity-20 transition-all duration-200 flex items-center gap-2 text-white"
-            >
-              <User size={18} />
+                        <Link
+                          to="/login"
+                          className="px-4 py-2 rounded-lg hover:bg-white hover:text-blue-600 transition-all duration-200 flex items-center gap-2 text-white"
+                        >              <User size={18} />
               Login
             </Link>
           ) : (
             <>
               <Link 
-                to="/upload" 
-                className="px-4 py-2 rounded-lg hover:bg-white hover:bg-opacity-20 transition-all duration-200 flex items-center gap-2 text-white"
-              >
+                                to="/upload"
+                                className="px-4 py-2 rounded-lg hover:bg-white hover:text-blue-600 transition-all duration-200 flex items-center gap-2 text-white"              >
                 <Upload size={18} />
                 Upload
               </Link>
               <Link 
-                to="/track" 
-                className="px-4 py-2 rounded-lg hover:bg-white hover:bg-opacity-20 transition-all duration-200 flex items-center gap-2 text-white"
-              >
+                        to="/track"
+                                className="px-4 py-2 rounded-lg hover:bg-white hover:text-blue-600 transition-all duration-200 flex items-center gap-2 text-white"              >
                 <Search size={18} />
                 Track
               </Link>
               {user.role === "user" && (
                 <Link 
                   to="/dashboard" 
-                  className="px-4 py-2 rounded-lg hover:bg-white hover:bg-opacity-20 transition-all duration-200 flex items-center gap-2 text-white"
+                  className="px-4 py-2 rounded-lg hover:bg-white hover:text-blue-600 transition-all duration-200 flex items-center gap-2 text-white"
                 >
                   <LayoutDashboard size={18} />
                   Dashboard
@@ -62,7 +59,7 @@ function Navbar() {
               {user.role === "admin" && (
                 <Link 
                   to="/admin" 
-                  className="px-4 py-2 rounded-lg hover:bg-white hover:bg-opacity-20 transition-all duration-200 flex items-center gap-2 text-white"
+                  className="px-4 py-2 rounded-lg hover:bg-white hover:text-blue-600 transition-all duration-200 flex items-center gap-2 text-white"
                 >
                   <Shield size={18} />
                   Admin
@@ -99,7 +96,7 @@ function Navbar() {
           {!isLoggedIn ? (
             <Link 
               to="/login" 
-              className="block px-4 py-2 rounded-lg hover:bg-white hover:bg-opacity-20 transition-all"
+              className="block px-4 py-2 rounded-lg hover:bg-white hover:text-blue-600 transition-all"
               onClick={() => setOpen(false)}
             >
               Login
@@ -107,25 +104,23 @@ function Navbar() {
           ) : (
             <>
               <Link 
-                to="/upload" 
-                className="block px-4 py-2 rounded-lg hover:bg-white hover:bg-opacity-20 transition-all flex items-center gap-2"
-                onClick={() => setOpen(false)}
+                                to="/upload"
+                                className="block px-4 py-2 rounded-lg hover:bg-white hover:text-blue-600 transition-all flex items-center gap-2"                onClick={() => setOpen(false)}
               >
                 <Upload size={18} />
                 Upload
               </Link>
-              <Link 
-                to="/track" 
-                className="block px-4 py-2 rounded-lg hover:bg-white hover:bg-opacity-20 transition-all flex items-center gap-2"
-                onClick={() => setOpen(false)}
-              >
-                <Search size={18} />
-                Track
-              </Link>
-              {user.role === "user" && (
+                            <Link
+                              to="/track"
+                              className="block px-4 py-2 rounded-lg hover:bg-white hover:text-blue-600 transition-all flex items-center gap-2"
+                              onClick={() => setOpen(false)}
+                            >
+                              <Search size={18} />
+                              Track
+                            </Link>              {user.role === "user" && (
                 <Link 
                   to="/dashboard" 
-                  className="block px-4 py-2 rounded-lg hover:bg-white hover:bg-opacity-20 transition-all flex items-center gap-2"
+                  className="block px-4 py-2 rounded-lg hover:bg-white hover:text-blue-600 transition-all flex items-center gap-2"
                   onClick={() => setOpen(false)}
                 >
                   <LayoutDashboard size={18} />
@@ -135,7 +130,7 @@ function Navbar() {
               {user.role === "admin" && (
                 <Link 
                   to="/admin" 
-                  className="block px-4 py-2 rounded-lg hover:bg-white hover:bg-opacity-20 transition-all flex items-center gap-2"
+                  className="block px-4 py-2 rounded-lg hover:bg-white hover:text-blue-600 transition-all flex items-center gap-2"
                   onClick={() => setOpen(false)}
                 >
                   <Shield size={18} />
